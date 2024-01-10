@@ -1,0 +1,131 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+/* Estilos del cuerpo del documento */
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url(blur-radial.svg), url(blur-radial.svg);
+  background-position: top -400px left -300px, bottom -400px right -300px;
+  background-repeat: no-repeat;
+  background-color: #121826;
+}
+
+/* Estilos del contenedor principal del formulario */
+.form-container {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  color: #fff;
+  border: 1px solid #4D5562;
+  background-color: #212936;
+
+}
+
+/* Estilos para encabezados */
+h1 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* Estilos para grupos de elementos */
+.group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para grupos de formulario */
+.form-group {
+  margin: 15px 20px;
+}
+
+/* Estilos para campos de entrada */
+input {
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid gray;
+  background-color: #212936;
+  color: #a1a1a9;
+}
+
+/* Estilos para etiquetas */
+label {
+  font-size: 12px;
+  color: #a1a1a9;
+  display: flex;
+  align-items: start;
+  margin: 10px 0;
+  padding: 0;
+}
+
+/* Estilos para botones */
+.btn {
+  background: linear-gradient(#845EEE, #652CD1);
+  margin-top: 2rem;
+  color: #E5E7EB;
+  border-radius: 5rem;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  margin-inline: auto;
+  inset-inline: 0;
+  display: block;
+  cursor: pointer;
+}
+
+/* Estilos para pasos o indicadores */
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  margin: 15px 0;
+}
+
+.steps p {
+  color: #394150;
+  font-size: 12px;
+  width: 100%;
+}
+/* Estilos para los radio-button de los pasos*/
+.btn-radio{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+/* Estilos para botones dentro de grupos de formulario */
+.form-group input[type="button"] {
+  text-align: left;
+}
+
+/* Estilos al interactuar con botones dentro de grupos de formulario */
+.form-group input[type="button"]:hover,
+.form-group input[type="button"]:focus {
+  background-color: #652cd1; /* Color de fondo al hacer clic */
+  color: white; /* Color de texto al hacer clic */
+  outline: none; /* Eliminar el borde de enfoque */
+}
+/* Media query para ajustar el botón en pantallas pequeñas */
+@media (max-width: 600px) { /* Ajusta este valor según tus necesidades */
+  .btn {
+    margin: 10px 50px;
+
+  }
+}
